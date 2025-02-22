@@ -24,10 +24,11 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h2>High-Level Deployment and Configuration Steps</h2>
 
-- Step 1
-- Step 2
-- Step 3
-- Step 4
+- Azure Active Directory Setup
+- Azure AD Connect Deployment
+- Hybrid Identity Configuration
+- AD DS Deployment in Azure
+- Testing and Monitoring
 
 <h2>Deployment and Configuration Steps</h2>
 
@@ -35,7 +36,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+A new Azure Active Directory tenant was created in Microsoft Azure, establishing the core identity and access management system to integrate with the on-premises Active Directory. This was done using Azure Virtual Machines (VMs) running Windows 10 for administrative tasks, and Remote Desktop was configured for secure access to the VMs.
 </p>
 <br />
 
@@ -43,7 +44,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Azure AD Connect was installed and configured on a Windows 10 VM in Azure, allowing for the synchronization of user accounts, groups, and passwords from the on-premises Active Directory to Azure AD. PowerShell was utilized to automate tasks and streamline the synchronization process between both directories.
 </p>
 <br />
 
@@ -51,6 +52,21 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+The synchronization of identities was successfully configured using Azure AD Connect, ensuring a consistent identity management experience between on-premises AD and Azure AD. PowerShell scripts were used to verify synchronization and troubleshoot potential issues.
+</p>
+<br />
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Active Directory Domain Services (AD DS) was deployed on an Azure Virtual Machine running Windows Server. The AD DS role was installed, and Remote Desktop was configured for administrative access. PowerShell was employed for automation of AD DS configuration tasks and integration with Azure resources.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Hybrid authentication and directory synchronization were thoroughly tested to ensure proper functionality. Azure AD Connect Health was enabled to monitor synchronization status, and PowerShell scripts were used for ongoing validation and monitoring. Windows 10 VMs were used to manage and test the configurations remotely.
 </p>
 <br />
