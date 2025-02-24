@@ -44,7 +44,7 @@ The virtual machines were successfully created in Azure, including one for Windo
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-The Active Directory Domain Services (AD DS) role was installed on the Windows Server 2022 VM. Using PowerShell, the server was promoted to a Domain Controller, and a new domain (mydomain.com) was created. The server was restarted, and Domain Admin credentials were set up successfully.
+The Active Directory Domain Services (AD DS) role was installed on the Windows Server 2022 VM. Using Server Manager, the server was promoted to a Domain Controller, and a new domain (mydomain.com) was created. The server was restarted, and Domain Admin credentials were set up successfully.
 </p>
 <br />
 
@@ -52,7 +52,7 @@ The Active Directory Domain Services (AD DS) role was installed on the Windows S
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-The Windows 10 (21H2) VM was connected to the domain by accessing Control Panel and joining the domain (yourdomain.local). The necessary Domain Admin credentials were entered, and after restarting the VM, users could log in using domain credentials.
+The Windows 10 (21H2) VM was connected to the domain by accessing Control Panel and joining the domain (mydomain.com). The necessary Domain Admin credentials were entered, and after restarting the VM, users could log in using domain credentials.
 </p>
 <br />
 <p>
