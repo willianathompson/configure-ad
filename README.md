@@ -36,7 +36,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-A new Azure Active Directory tenant was created in Microsoft Azure, establishing the core identity and access management system to integrate with the on-premises Active Directory. This was done using Azure Virtual Machines (VMs) running Windows 10 for administrative tasks, and Remote Desktop was configured for secure access to the VMs. The Windows server private IP address was set to static as it acts as a server.
+The virtual machines were successfully created in Azure, including one for Windows Server 2022 to host Active Directory Domain Services (AD DS), and another for Windows 10 (22H2) to join the domain. The appropriate VM sizes, regions, and networking settings were configured, with Public IP and RDP access enabled for remote connections. The Windows server private IP address was set to static as it acts as the domain server.
 </p>
 <br />
 
@@ -44,7 +44,7 @@ A new Azure Active Directory tenant was created in Microsoft Azure, establishing
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Azure AD Connect was installed and configured on a Windows 10 VM in Azure, allowing for the synchronization of user accounts, groups, and passwords from the on-premises Active Directory to Azure AD. PowerShell was utilized to automate tasks and streamline the synchronization process between both directories.
+The Active Directory Domain Services (AD DS) role was installed on the Windows Server 2022 VM. Using PowerShell, the server was promoted to a Domain Controller, and a new domain (mydomain.com) was created. The server was restarted, and Domain Admin credentials were set up successfully.
 </p>
 <br />
 
@@ -52,14 +52,14 @@ Azure AD Connect was installed and configured on a Windows 10 VM in Azure, allow
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-The synchronization of identities was successfully configured using Azure AD Connect, ensuring a consistent identity management experience between on-premises AD and Azure AD. PowerShell scripts were used to verify synchronization and troubleshoot potential issues.
+The Windows 10 (21H2) VM was connected to the domain by accessing Control Panel and joining the domain (yourdomain.local). The necessary Domain Admin credentials were entered, and after restarting the VM, users could log in using domain credentials.
 </p>
 <br />
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Active Directory Domain Services (AD DS) was deployed on an Azure Virtual Machine running Windows Server. The AD DS role was installed, and Remote Desktop was configured for administrative access. PowerShell was employed for automation of AD DS configuration tasks and integration with Azure resources.
+Domain membership was verified by logging into the Windows 10 VM using the domain credentials, and pinging the domain from both the Windows Server 2022 and Windows 10 VMs confirmed proper connectivity between the domain controller and the client machine.
 </p>
 <br />
 
@@ -67,6 +67,8 @@ Active Directory Domain Services (AD DS) was deployed on an Azure Virtual Machin
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Hybrid authentication and directory synchronization were thoroughly tested to ensure proper functionality. Azure AD Connect Health was enabled to monitor synchronization status, and PowerShell scripts were used for ongoing validation and monitoring. Windows 10 VMs were used to manage and test the configurations remotely.
+Users and groups were created and managed on the Windows Server 2022 VM using Active Directory Users and Computers. Group Policy Management was configured to set domain-wide policies, including password policies and account lockout policies, ensuring consistent security across the domain.
+
+  This successful implementation resulted in a fully functional On-premises Active Directory deployment within Azure using Windows Server 2022 and Windows 10 (21H2), with domain management handled efficiently via PowerShell and Remote Desktop.
 </p>
 <br />
