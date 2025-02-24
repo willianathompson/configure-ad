@@ -24,11 +24,11 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h2>High-Level Deployment and Configuration Steps</h2>
 
-- Azure Active Directory Setup
-- Azure AD Connect Deployment
-- Hybrid Identity Configuration
-- AD DS Deployment in Azure
-- Testing and Monitoring
+- Create Azure Virtural Machines
+- Active Directory Domain Services Installed on Windows Server
+- Windows 10 VM Joined to the Domain
+- Domain Membership and Connectivity Verified
+- Users and Group Policies Configured
 
 <h2>Deployment and Configuration Steps</h2>
 
