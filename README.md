@@ -33,7 +33,11 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <h2>Deployment and Configuration Steps</h2>
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+![image](https://github.com/user-attachments/assets/8b239299-f7ac-4348-902e-e3cbd1d6ed9a)
+![image](https://github.com/user-attachments/assets/eea8af42-6473-4bea-843c-564b83252a1c)
+![image](https://github.com/user-attachments/assets/15e43c64-b58d-47a2-a226-a66067c63042)
+
 </p>
 <p>
 The virtual machines were successfully created in Azure, including one for Windows Server 2022 to host Active Directory Domain Services (AD DS), and another for Windows 10 (22H2) to join the domain. The appropriate VM sizes, regions, and networking settings were configured, with Public IP and RDP access enabled for remote connections. The Windows server private IP address was set to static and firewall disabled for connectivity testing.
@@ -41,7 +45,12 @@ The virtual machines were successfully created in Azure, including one for Windo
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+![image](https://github.com/user-attachments/assets/41268788-e34a-4630-9d5f-34dff5768552)
+![image](https://github.com/user-attachments/assets/cb4a2082-0350-413b-a9fa-5cb4587cf07c)
+![image](https://github.com/user-attachments/assets/e873a841-e9dc-435f-b775-8faa1d502c97)
+![image](https://github.com/user-attachments/assets/4fffae21-eb50-4801-b13f-81d94f9b08d4)
+
 </p>
 <p>
 The Active Directory Domain Services (AD DS) role was installed on the Windows Server 2022 VM. Using Server Manager, the server was promoted to a Domain Controller, and a new domain (mydomain.com) was created. The server was restarted, and Domain Admin credentials were set up successfully.
@@ -49,14 +58,23 @@ The Active Directory Domain Services (AD DS) role was installed on the Windows S
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  
+![image](https://github.com/user-attachments/assets/3eb974b2-f424-4b90-b3ce-9226c368e68c)
+![image](https://github.com/user-attachments/assets/2ab53e69-0d4d-4983-a306-0a36bf611175)
+  
+
 </p>
 <p>
-The Windows 10 (21H2) VM was connected to the domain by accessing Control Panel and joining the domain (mydomain.com). The necessary Domain Admin credentials were entered, and after restarting the VM, users could log in using domain credentials.
+The Windows 10 (22H2) VM was connected to the domain by accessing Control Panel and joining the domain (mydomain.com). The necessary Domain Admin credentials were entered, and after restarting the VM, users could log in using domain credentials.
 </p>
 <br />
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+![image](https://github.com/user-attachments/assets/98f43f6d-8b5f-4a8b-973d-842b0800271d)
+![image](https://github.com/user-attachments/assets/7bd54faf-31b7-49c0-b2f3-10dc0c5b4eb8)
+![image](https://github.com/user-attachments/assets/41905e10-11ca-4502-9986-e3f5aa166a62)
+![image](https://github.com/user-attachments/assets/811533a0-c2b5-4286-8371-989ce0418801)
+
 </p>
 <p>
 Domain membership was verified by logging into the Windows 10 VM using the domain credentials, and pinging the domain from both the Windows Server 2022 and Windows 10 VMs confirmed proper connectivity between the domain controller and the client machine.
@@ -64,11 +82,13 @@ Domain membership was verified by logging into the Windows 10 VM using the domai
 <br />
 
 <p>
+
+
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 Users and groups were created and managed on the Windows Server 2022 VM using Active Directory Users and Computers. Group Policy Management was configured to set domain-wide policies, including password policies and account lockout policies, ensuring consistent security across the domain.
 
-  This successful implementation resulted in a fully functional On-premises Active Directory deployment within Azure using Windows Server 2022 and Windows 10 (21H2), with domain management handled efficiently via PowerShell and Remote Desktop.
+  This successful implementation resulted in a fully functional On-premises Active Directory deployment within Azure using Windows Server 2022 and Windows 10 (22H2), with domain management handled efficiently via PowerShell and Remote Desktop.
 </p>
 <br />
