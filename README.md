@@ -36,7 +36,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-A new Azure Active Directory tenant was created in Microsoft Azure, establishing the core identity and access management system to integrate with the on-premises Active Directory. This was done using Azure Virtual Machines (VMs) running Windows 10 for administrative tasks, and Remote Desktop was configured for secure access to the VMs.
+A new Azure Active Directory tenant was created in Microsoft Azure, establishing the core identity and access management system to integrate with the on-premises Active Directory. This was done using Azure Virtual Machines (VMs) running Windows 10 for administrative tasks, and Remote Desktop was configured for secure access to the VMs. The Windows server private IP address was set to static as it acts as a server.
 </p>
 <br />
 
