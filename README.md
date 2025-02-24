@@ -87,7 +87,7 @@ Domain membership was verified by logging into the Windows 10 VM using the domai
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Users and groups were created and managed on the Windows Server 2022 VM using Active Directory Users and Computers. Group Policy Management was configured to set domain-wide policies, including password policies and account lockout policies, ensuring consistent security across the domain.
+Users and groups were created and managed on the Windows Server 2022 VM using Active Directory Users and Computers. Group Policy Management was configured to set domain-wide policies, including password resets and account lockout policies, ensuring consistent security across the domain.
 
   This successful implementation resulted in a fully functional On-premises Active Directory deployment within Azure using Windows Server 2022 and Windows 10 (22H2), with domain management handled efficiently via PowerShell and Remote Desktop.
 </p>
