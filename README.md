@@ -36,7 +36,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-The virtual machines were successfully created in Azure, including one for Windows Server 2022 to host Active Directory Domain Services (AD DS), and another for Windows 10 (22H2) to join the domain. The appropriate VM sizes, regions, and networking settings were configured, with Public IP and RDP access enabled for remote connections. The Windows server private IP address was set to static as it acts as the domain server.
+The virtual machines were successfully created in Azure, including one for Windows Server 2022 to host Active Directory Domain Services (AD DS), and another for Windows 10 (22H2) to join the domain. The appropriate VM sizes, regions, and networking settings were configured, with Public IP and RDP access enabled for remote connections. The Windows server private IP address was set to static and firewall disabled for connectivity testing.
 </p>
 <br />
 
