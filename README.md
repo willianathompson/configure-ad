@@ -83,8 +83,25 @@ Domain membership was verified by logging into the Windows 10 VM using the domai
 
 <p>
 
+![image](https://github.com/user-attachments/assets/c4467ae6-1ed0-4a0e-9a09-1cac174643d9)
+![image](https://github.com/user-attachments/assets/2119f041-b2d0-49cb-8b86-252a8c2a7d4e)
 
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+![image](https://github.com/user-attachments/assets/cbc0fe6e-de00-4bb5-94d7-e2bdf68781fc)
+![image](https://github.com/user-attachments/assets/d45d00df-dbde-47d5-8120-5b6e789e0ff0)
+</p>
+<p>
+</p>
+
+![image](https://github.com/user-attachments/assets/6fbac9ba-07b6-41bb-a162-d3f093faea90)
+![image](https://github.com/user-attachments/assets/fee21f53-6e96-4372-a06a-724cfb03d8b3)
+
+</p>
+<p>
+</p>
+
+![image](https://github.com/user-attachments/assets/ac0adf43-079b-4767-80d5-6c26f4310d94)
+
 </p>
 <p>
 Users and groups were created and managed on the Windows Server 2022 VM using Active Directory Users and Computers. Group Policy Management was configured to set domain-wide policies, including password policies and account lockout policies, ensuring consistent security across the domain.
