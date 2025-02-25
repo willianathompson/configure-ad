@@ -71,7 +71,6 @@ The Windows 10 (22H2) VM was connected to the domain by accessing Control Panel 
 <p>
 
 
-![image](https://github.com/user-attachments/assets/7bd54faf-31b7-49c0-b2f3-10dc0c5b4eb8)
 ![image](https://github.com/user-attachments/assets/41905e10-11ca-4502-9986-e3f5aa166a62)
 ![image](https://github.com/user-attachments/assets/811533a0-c2b5-4286-8371-989ce0418801)
 
