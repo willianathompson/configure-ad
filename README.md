@@ -49,7 +49,7 @@ The virtual machines were successfully created in Azure, including one for Windo
 ![image](https://github.com/user-attachments/assets/41268788-e34a-4630-9d5f-34dff5768552)
 ![image](https://github.com/user-attachments/assets/cb4a2082-0350-413b-a9fa-5cb4587cf07c)
 ![image](https://github.com/user-attachments/assets/e873a841-e9dc-435f-b775-8faa1d502c97)
-![image](https://github.com/user-attachments/assets/4fffae21-eb50-4801-b13f-81d94f9b08d4)
+
 
 </p>
 <p>
