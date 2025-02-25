@@ -59,9 +59,9 @@ The Active Directory Domain Services (AD DS) role was installed on the Windows S
 
 <p>
   
-![image](https://github.com/user-attachments/assets/3eb974b2-f424-4b90-b3ce-9226c368e68c)
+
 ![image](https://github.com/user-attachments/assets/2ab53e69-0d4d-4983-a306-0a36bf611175)
-  
+![image](https://github.com/user-attachments/assets/98f43f6d-8b5f-4a8b-973d-842b0800271d)  
 
 </p>
 <p>
@@ -70,7 +70,7 @@ The Windows 10 (22H2) VM was connected to the domain by accessing Control Panel 
 <br />
 <p>
 
-![image](https://github.com/user-attachments/assets/98f43f6d-8b5f-4a8b-973d-842b0800271d)
+
 ![image](https://github.com/user-attachments/assets/7bd54faf-31b7-49c0-b2f3-10dc0c5b4eb8)
 ![image](https://github.com/user-attachments/assets/41905e10-11ca-4502-9986-e3f5aa166a62)
 ![image](https://github.com/user-attachments/assets/811533a0-c2b5-4286-8371-989ce0418801)
