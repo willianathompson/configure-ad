@@ -40,7 +40,9 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 </p>
 <p>
-The virtual machines were successfully created in Azure, including one for Windows Server 2022 to host Active Directory Domain Services (AD DS), and another for Windows 10 (22H2) to join the domain. The appropriate VM sizes, regions, and networking settings were configured, with Public IP and RDP access enabled for remote connections. The Windows server private IP address was set to static and firewall disabled for connectivity testing.
+
+The virtual machines were successfully created in Azure, including one running Windows Server 2022 to host Active Directory Domain Services (AD DS) and another running Windows 10 (22H2) to join the domain. The VM sizes, regions, and networking settings were configured, with Public IP and RDP access enabled for remote connections. The Windows Server's private IP address was set to static, and the firewall was disabled to allow for connectivity testing.
+
 </p>
 <br />
 
@@ -53,7 +55,9 @@ The virtual machines were successfully created in Azure, including one for Windo
 
 </p>
 <p>
-The Active Directory Domain Services (AD DS) role was installed on the Windows Server 2022 VM. Using Server Manager, the server was promoted to a Domain Controller, and a new domain (mydomain.com) was created. The server was restarted, and Domain Admin credentials were set up successfully.
+  
+The Active Directory Domain Services (AD DS) role was installed on the Windows Server 2022 VM. Using Server Manager, the server was set up as a Domain Controller, and a new domain called mydomain.com was created. After restarting the server, the Domain Admin credentials were set up successfully.
+  
 </p>
 <br />
 
@@ -85,9 +89,9 @@ Domain membership was verified by logging into the Windows 10 VM using the domai
 ![image](https://github.com/user-attachments/assets/c4467ae6-1ed0-4a0e-9a09-1cac174643d9)
 ![image](https://github.com/user-attachments/assets/2119f041-b2d0-49cb-8b86-252a8c2a7d4e)
 
-
 ![image](https://github.com/user-attachments/assets/cbc0fe6e-de00-4bb5-94d7-e2bdf68781fc)
 ![image](https://github.com/user-attachments/assets/d45d00df-dbde-47d5-8120-5b6e789e0ff0)
+
 </p>
 <p>
 </p>
@@ -103,8 +107,10 @@ Domain membership was verified by logging into the Windows 10 VM using the domai
 
 </p>
 <p>
-Users and groups were created and managed on the Windows Server 2022 VM using Active Directory Users and Computers. Group Policy Management was configured to set domain-wide policies, including password policies and account lockout policies, ensuring consistent security across the domain.
 
-  This successful implementation resulted in a fully functional On-premises Active Directory deployment within Azure using Windows Server 2022 and Windows 10 (22H2), with domain management handled efficiently via PowerShell and Remote Desktop.
+Users and groups were created and managed on the Windows Server 2022 VM using Active Directory Users and Computers. Group Policy Management was set up to create domain-wide policies, like password rules and account lockout settings, to make sure security was the same across the entire domain.
+
+This setup successfully created a working On-premises Active Directory in Azure using Windows Server 2022 and Windows 10 (22H2), with domain management done efficiently through PowerShell and Remote Desktop.
+
 </p>
 <br />
