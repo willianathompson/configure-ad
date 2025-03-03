@@ -93,24 +93,21 @@ Install the Domain Controller (DC) role and complete the configuration. After th
 
 Change the DNS settings on the Windows 10 (client) VM to point to the domain controller using the server's VNet private IP, then restart the VM.
 
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+
+To join the Windows 10 VM to the Domain, right-click This PC, select Properties, and click Change settings next to the computer name. In the System Properties window, click Change, select Domain, and enter the domain name (e.g., example.com). Enter domain admin credentials when prompted, click OK, and restart the VM. After the restart, the Windows 10 VM will be part of the domain.
 
 
 
-![image](https://github.com/user-attachments/assets/41268788-e34a-4630-9d5f-34dff5768552)
 
 
 
-![image](https://github.com/user-attachments/assets/cb4a2082-0350-413b-a9fa-5cb4587cf07c)
-
-
-
-![image](https://github.com/user-attachments/assets/e873a841-e9dc-435f-b775-8faa1d502c97)
 
 
 </p>
 <p>
-  
-The Active Directory Domain Services (AD DS) role was installed on the Windows Server 2022 VM. Using Server Manager, the server was set up as a Domain Controller, and a new domain called mydomain.com was created. After restarting the server, the Domain Admin credentials were set up successfully.
+
   
 </p>
 <br />
