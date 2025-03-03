@@ -98,6 +98,25 @@ Install the Domain Controller (DC) role and complete the configuration. After th
 The necessary Domain Admin credentials are entered, and after restarting the VM, users can log in using domain credentials (mydomain.com\username).
 
 
+![image](https://github.com/user-attachments/assets/32353a93-c307-40d5-9cf9-08f148578a9b)
+
+
+Open Active Directory Users and Computers on your Domain Controller, create an Organizational Unit (OU) called _EMPLOYEES, and a second OU named _ADMINS under your domain.
+
+
+![image](https://github.com/user-attachments/assets/3eb974b2-f424-4b90-b3ce-9226c368e68c)
+
+
+![image](https://github.com/user-attachments/assets/2ab53e69-0d4d-4983-a306-0a36bf611175)
+
+
+
+Right-click on the _ADMINS OU and create a new user to set up a Domain Admin user. 
+
+![image](https://github.com/user-attachments/assets/2ab53e69-0d4d-4983-a306-0a36bf611175)
+
+After creating the user, add them to the Domain Admins group to grant administrative privileges.
+
 
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
