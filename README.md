@@ -234,13 +234,18 @@ Verify the domain users by opening Active Directory Users and Computers. Navigat
 Navigate to Client-1 using the newly created domain user credentials. Once logged in, open This PC > Windows (C:) > Users to view the Domain User profile on Client-1.
 
 
+![image](https://github.com/user-attachments/assets/6fbac9ba-07b6-41bb-a162-d3f093faea90)
+
+dc lockout  
+
+![image](https://github.com/user-attachments/assets/fee21f53-6e96-4372-a06a-724cfb03d8b3)
+
+password reset
 
 
+![image](https://github.com/user-attachments/assets/cf2bf5b1-a37e-43c3-8eeb-97ec01965357)
 
-
-
-
-
+force/confirmed update
 
 ----
 
@@ -263,58 +268,3 @@ Navigate to Client-1 using the newly created domain user credentials. Once logge
 
 </p>
 <p>
-The Windows 10 (22H2) VM was connected to the domain by accessing Control Panel and joining the domain (mydomain.com). The necessary Domain Admin credentials were entered, and after restarting the VM, users could log in using domain credentials.
-</p>
-<br />
-<p>
-<h>Domain Membership and Connectivity Verified</h> 
-
-![image](https://github.com/user-attachments/assets/2ab53e69-0d4d-4983-a306-0a36bf611175)
-
-Log into the client VM (Windows 10) using domain credentials. Then, open Active Directory Users and Computers on the Domain Controller (Windows Server 2022) as an admin to manage user accounts and groups.
-</p>
-<p>
-
-
-
-
-
-![image](https://github.com/user-attachments/assets/41905e10-11ca-4502-9986-e3f5aa166a62)
-![image](https://github.com/user-attachments/assets/811533a0-c2b5-4286-8371-989ce0418801)
-
-</p>
-<p>
-Domain membership was verified by logging into the Windows 10 VM using the domain credentials, and pinging the domain from both the Windows Server 2022 and Windows 10 VMs confirmed proper connectivity between the domain controller and the client machine.
-</p>
-<br />
-
-<p>
-
-![image](https://github.com/user-attachments/assets/c4467ae6-1ed0-4a0e-9a09-1cac174643d9)
-![image](https://github.com/user-attachments/assets/2119f041-b2d0-49cb-8b86-252a8c2a7d4e)
-
-![image](https://github.com/user-attachments/assets/cbc0fe6e-de00-4bb5-94d7-e2bdf68781fc)
-![image](https://github.com/user-attachments/assets/d45d00df-dbde-47d5-8120-5b6e789e0ff0)
-
-</p>
-<p>
-</p>
-
-![image](https://github.com/user-attachments/assets/6fbac9ba-07b6-41bb-a162-d3f093faea90)
-![image](https://github.com/user-attachments/assets/fee21f53-6e96-4372-a06a-724cfb03d8b3)
-
-</p>
-<p>
-</p>
-
-![image](https://github.com/user-attachments/assets/ac0adf43-079b-4767-80d5-6c26f4310d94)
-
-</p>
-<p>
-
-Users and groups were created and managed on the Windows Server 2022 VM using Active Directory Users and Computers. Group Policy Management was set up to create domain-wide policies, like password rules and account lockout settings, to make sure security was the same across the entire domain.
-
-This setup successfully created a working On-premises Active Directory in Azure using Windows Server 2022 and Windows 10 (22H2), with domain management done efficiently through PowerShell and Remote Desktop.
-
-</p>
-<br />
