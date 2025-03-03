@@ -218,6 +218,20 @@ Return to DC-1 VM and log in as mydomain.com\domain admin (jane_admin). Verify t
 Log into Client-1 as the domain admin (mydomain.com\jane_admin). Then, go to Start > Settings > System > Remote Desktop. Under User Accounts, click Select users that can remotely connect to this PC. Next, click Add and enter Domain users. This will grant all domain users access to log into Client-1 remotely.
 
 
+![image](https://github.com/user-attachments/assets/c4467ae6-1ed0-4a0e-9a09-1cac174643d9)
+
+Go to Start > PowerShell ISE (run as Administrator). Split the screen to show the script. Download the provided script and save it to the desktop. Open the script in PowerShell ISE, then paste the script into the editor. Finally, click Run Script to execute the script and create Domain Users.
+
+![image](https://github.com/user-attachments/assets/2119f041-b2d0-49cb-8b86-252a8c2a7d4e)
+
+
+Verify the domain users by opening Active Directory Users and Computers. Navigate to the _EMPLOYEES Organizational Unit (OU) and select a random user. Use that user's credentials to log into Client-1.
+
+
+![image](https://github.com/user-attachments/assets/d45d00df-dbde-47d5-8120-5b6e789e0ff0)
+
+
+Navigate to Client-1 using the newly created domain user credentials. Once logged in, open This PC > Windows (C:) > Users to view the Domain User profile on Client-1.
 
 
 
@@ -228,6 +242,7 @@ Log into Client-1 as the domain admin (mydomain.com\jane_admin). Then, go to Sta
 
 
 
+----
 
 
 
