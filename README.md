@@ -29,15 +29,22 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <h2>Deployment and Configuration Steps</h2>
 
 <p>
+<h4>Create Azure Virtural Machines</h4>
 
 ![image](https://github.com/user-attachments/assets/8b239299-f7ac-4348-902e-e3cbd1d6ed9a)
+
+Deploy an Azure VM running Windows Server 2022 to host Active Directory Domain Services, configuring the VM's size, region, and networking settings with a public IP and RDP access for remote connection. The server’s private IP address is set to static.
+
 ![image](https://github.com/user-attachments/assets/eea8af42-6473-4bea-843c-564b83252a1c)
+
+Deploy a second VM running Windows 10 (22H2) to join the domain. Ensure the VM size, regions, and networking are configured, as it will also need RDP remote access.
+
 ![image](https://github.com/user-attachments/assets/15e43c64-b58d-47a2-a226-a66067c63042)
 
+Disable the firewall for both VMs through Windows Defender Firewall to allow for connectivity testing.
 </p>
 <p>
 
-The virtual machines were successfully created in Azure, including one running Windows Server 2022 to host Active Directory Domain Services (AD DS) and another running Windows 10 (22H2) to join the domain. The VM sizes, regions, and networking settings were configured, with Public IP and RDP access enabled for remote connections. The Windows Server's private IP address was set to static, and the firewall was disabled to allow for connectivity testing.
 
 </p>
 <br />
