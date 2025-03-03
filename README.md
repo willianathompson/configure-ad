@@ -106,12 +106,52 @@ Open Active Directory Users and Computers on your Domain Controller, create an O
 
 ![image](https://github.com/user-attachments/assets/3eb974b2-f424-4b90-b3ce-9226c368e68c)
 
+Right-click on the _ADMINS OU and create a new user to set up a Domain Admin user. 
 
 ![image](https://github.com/user-attachments/assets/2ab53e69-0d4d-4983-a306-0a36bf611175)
 
+Right-click on the user, select Properties, and assign them Domain Admin privileges.
 
 
-Right-click on the _ADMINS OU and create a new user to set up a Domain Admin user. 
+![image](https://github.com/user-attachments/assets/98f43f6d-8b5f-4a8b-973d-842b0800271d)  
+
+Go to the client VM and sign in to the domain using the new admin credentials.
+
+![image](https://github.com/user-attachments/assets/98f43f6d-8b5f-4a8b-973d-842b0800271d)  
+
+
+<h4>Windows 10 VM Joined to the Domain</h4>
+
+![image](https://github.com/user-attachments/assets/e50a1a76-92f9-4520-aadc-4aede8a30008)
+
+Sign out and sign back into the client VM domain as the local admin (labuser). Then, connect the client VM to the domain by going to Start > Settings > System > About > Rename this PC (Advanced) > Change, and enter 'mydomain.com'.
+
+![image](https://github.com/user-attachments/assets/98f43f6d-8b5f-4a8b-973d-842b0800271d)
+
+Use the domain admin credentials to log in to the domain on the client VM.
+
+![image](https://github.com/user-attachments/assets/7bd54faf-31b7-49c0-b2f3-10dc0c5b4eb8)
+
+The client VM is now connected to the domain. A restart is required. Upon logging back in, the client VM will be a member of the domain.
+
+![image](https://github.com/user-attachments/assets/41905e10-11ca-4502-9986-e3f5aa166a62)
+
+Return to the DC VM and log in as mydomain.com\jane_admin. Verify that the client VM is connected to the domain by checking Active Directory Users and Computers in the Computers OU.
+
+
+
+
+
+<h4>Users and Group Policies Configured</h4>
+
+
+
+
+
+
+
+
+
 
 ![image](https://github.com/user-attachments/assets/2ab53e69-0d4d-4983-a306-0a36bf611175)
 
@@ -141,7 +181,7 @@ To join the Windows 10 VM to the Domain, right-click This PC, select Properties,
 
 
 
-![image](https://github.com/user-attachments/assets/98f43f6d-8b5f-4a8b-973d-842b0800271d)  
+
 
 </p>
 <p>
