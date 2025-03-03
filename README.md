@@ -35,7 +35,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 </p>
 <p>
-Deploy an Azure VM running Windows Server 2022 to host Active Directory Domain Services, configuring the VM's size, region, and networking settings with a public IP and RDP access for remote connection. The server’s private IP address is set to static.
+Deploy an Azure VM running Windows Server 2022 (DC-1) to host Active Directory Domain Services, configuring the VM's size, region, and networking settings with a public IP and RDP access for remote connection. The server’s private IP address is set to static.
 </p>
 <p>
 
@@ -43,23 +43,17 @@ Deploy an Azure VM running Windows Server 2022 to host Active Directory Domain S
 
 </p>
 <p>
-Deploy a second VM running Windows 10 (22H2) to join the domain. Ensure the VM size, regions, and networking are configured, as it will also need RDP remote access.
+Deploy a second VM running Windows 10 (22H2) (Client-1) to join the domain. Ensure the VM size, regions, and networking are configured, as it will also need RDP remote access.
 </p>
 <p>
 
-![image](https://github.com/user-attachments/assets/9c63196b-6db1-4628-997b-11a5bd618f74)
 
-</p>
-<p>
-In Azure change the DNS settings on the Windows 10 (client) VM to point to the domain controller using the server's VNet private IP, then restart the VM.
-</p>
-<p>
 
 ![image](https://github.com/user-attachments/assets/15e43c64-b58d-47a2-a226-a66067c63042)
 
 </p>
 <p>
-Disable the firewall for both VMs through Windows Defender Firewall to allow for connectivity testing.
+Disable the firewall for the DC-1 VM through Windows Defender Firewall to allow for connectivity testing.
 </p>
 <p>
 
@@ -74,7 +68,7 @@ Disable the firewall for both VMs through Windows Defender Firewall to allow for
 
 </p>
 <p>
-Add the Active Directory Domain Services (AD DS) role to the Windows Server 2022 VM using Server Manager.
+Add the Active Directory Domain Services (AD DS) role to the DC-1 VM using Server Manager.
 </p>
 <p>
 
@@ -129,7 +123,7 @@ Install the Domain Controller (DC) role and complete the configuration. After th
 
 </p>
 <p>
-The necessary Domain Admin credentials are entered, and after restarting the VM, users can log in using domain credentials (mydomain.com\username).
+The necessary Domain Admin credentials are entered, and after restarting the VM, users can log in using domain credentials (mydomain.com\labuser).
 </p>
 <p>
 
@@ -137,7 +131,7 @@ The necessary Domain Admin credentials are entered, and after restarting the VM,
 
 </p>
 <p>
-Open Active Directory Users and Computers on your Domain Controller, create an Organizational Unit (OU) called _EMPLOYEES, and a second OU named _ADMINS under your domain.
+Open Active Directory Users and Computers on DC-1, create an Organizational Unit (OU) called _EMPLOYEES, and a second OU named _ADMINS under your domain.
 </p>
 <p>
 
@@ -158,14 +152,7 @@ Right-click on the user, select Properties, and assign them Domain Admin privile
 <p>
 
 ![image](https://github.com/user-attachments/assets/98f43f6d-8b5f-4a8b-973d-842b0800271d)  
-
-</p>
-<p>
-Go to the client VM and sign in to the domain using the new admin credentials.
-</p>
-<p>
-
-![image](https://github.com/user-attachments/assets/98f43f6d-8b5f-4a8b-973d-842b0800271d)  
+ 
 </p>
 <p>
 
@@ -176,11 +163,19 @@ Go to the client VM and sign in to the domain using the new admin credentials.
 <p>
 <h4>Windows 10 VM Joined to the Domain</h4>
 
+![image](https://github.com/user-attachments/assets/9c63196b-6db1-4628-997b-11a5bd618f74)
+
+</p>
+<p>
+In Azure change the DNS settings on the Windows 10 (Client-1) VM to point to the domain controller using the server's VNet private IP, then restart the VM.
+</p>
+<p>
+
 ![image](https://github.com/user-attachments/assets/e50a1a76-92f9-4520-aadc-4aede8a30008)
 
 </p>
 <p>
-Sign out and sign back into the client VM domain as the local admin (labuser). Then, connect the client VM to the domain by going to Start > Settings > System > About > Rename this PC (Advanced) > Change, and enter 'mydomain.com'.
+Sign into the Client-1 domain with domain credentials (labuser). Then, connect Client-1 to the domain by going to Start > Settings > System > About. Under PC name, click Rename this PC (Advanced) > Change. Enter 'mydomain.com' in the domain field and confirm. 
 </p>
 <p>
 
@@ -188,7 +183,7 @@ Sign out and sign back into the client VM domain as the local admin (labuser). T
 
 </p>
 <p>
-Use the domain admin credentials to log in to the domain on the client VM.
+Use the domain admin credentials to log in to the domain on Client-1.
 </p>
 <p>
 
@@ -204,7 +199,7 @@ The client VM is now connected to the domain. A restart is required. Upon loggin
 
 </p>
 <p>
-Return to the DC VM and log in as mydomain.com\jane_admin. Verify that the client VM is connected to the domain by checking Active Directory Users and Computers in the Computers OU.
+Return to DC-1 VM and log in as mydomain.com\domain admin (jane_admin). Verify that the Client-1 is connected to the domain by checking Active Directory Users and Computers in the Computers OU.
 </p>
 <p>
 
@@ -218,7 +213,7 @@ Return to the DC VM and log in as mydomain.com\jane_admin. Verify that the clien
 
 
 
-
+----
 
 
 
