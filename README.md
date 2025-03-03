@@ -212,8 +212,13 @@ Return to DC-1 VM and log in as mydomain.com\domain admin (jane_admin). Verify t
 <h4>Users and Group Policies Configured</h4>
 
 
+![image](https://github.com/user-attachments/assets/ea334f3f-332b-4208-834c-09eeac93253e)
 
-----
+
+Log into Client-1 as the domain admin (mydomain.com\jane_admin). Then, go to Start > Settings > System > Remote Desktop. Under User Accounts, click Select users that can remotely connect to this PC. Next, click Add and enter Domain users. This will grant all domain users access to log into Client-1 remotely.
+
+
+
 
 
 
