@@ -92,6 +92,10 @@ Install the Domain Controller (DC) role and complete the configuration. After th
 <p>
 <h4>Domain Membership and Connectivity Verified</h4>
 
+![image](https://github.com/user-attachments/assets/61480065-cd96-4a0c-992a-50089eebac00)
+
+
+The necessary Domain Admin credentials are entered, and after restarting the VM, users can log in using domain credentials (mydomain.com\username).
 
 
 
