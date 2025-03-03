@@ -22,8 +22,8 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 - Create Azure Virtural Machines
 - Active Directory Domain Services Installed on Windows Server
-- Windows 10 VM Joined to the Domain
 - Domain Membership and Connectivity Verified
+- Windows 10 VM Joined to the Domain
 - Users and Group Policies Configured
 
 <h2>Deployment and Configuration Steps</h2>
@@ -38,6 +38,10 @@ Deploy an Azure VM running Windows Server 2022 to host Active Directory Domain S
 ![image](https://github.com/user-attachments/assets/eea8af42-6473-4bea-843c-564b83252a1c)
 
 Deploy a second VM running Windows 10 (22H2) to join the domain. Ensure the VM size, regions, and networking are configured, as it will also need RDP remote access.
+
+![image](https://github.com/user-attachments/assets/9c63196b-6db1-4628-997b-11a5bd618f74)
+
+In Azure change the DNS settings on the Windows 10 (client) VM to point to the domain controller using the server's VNet private IP, then restart the VM.
 
 ![image](https://github.com/user-attachments/assets/15e43c64-b58d-47a2-a226-a66067c63042)
 
@@ -86,12 +90,10 @@ Install the Domain Controller (DC) role and complete the configuration. After th
 <br />
 
 <p>
-<h4>Windows 10 VM Joined to the Domain</h4>
+<h4>Domain Membership and Connectivity Verified</h4>
 
 
-![image](https://github.com/user-attachments/assets/9c63196b-6db1-4628-997b-11a5bd618f74)
 
-Change the DNS settings on the Windows 10 (client) VM to point to the domain controller using the server's VNet private IP, then restart the VM.
 
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
