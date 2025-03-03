@@ -113,7 +113,7 @@ To join the Windows 10 VM to the Domain, right-click This PC, select Properties,
 <br />
 
 <p>
-  
+
 
 ![image](https://github.com/user-attachments/assets/2ab53e69-0d4d-4983-a306-0a36bf611175)
 ![image](https://github.com/user-attachments/assets/98f43f6d-8b5f-4a8b-973d-842b0800271d)  
@@ -124,7 +124,7 @@ The Windows 10 (22H2) VM was connected to the domain by accessing Control Panel 
 </p>
 <br />
 <p>
-
+<h>Domain Membership and Connectivity Verified</h> 
 
 ![image](https://github.com/user-attachments/assets/41905e10-11ca-4502-9986-e3f5aa166a62)
 ![image](https://github.com/user-attachments/assets/811533a0-c2b5-4286-8371-989ce0418801)
