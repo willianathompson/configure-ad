@@ -50,9 +50,60 @@ Disable the firewall for both VMs through Windows Defender Firewall to allow for
 <br />
 
 <p>
+<h4>Active Directory Domain Services Installed on Windows Server</h4>
+
+
+
+![image](https://github.com/user-attachments/assets/82f5b9b3-5704-4012-8e62-939b90ed2f0c)
+
+
+Add the Active Directory Domain Services (AD DS) role to the Windows Server 2022 VM using Server Manager.
 
 ![image](https://github.com/user-attachments/assets/41268788-e34a-4630-9d5f-34dff5768552)
+
+Install the AD DS role on the server.
+
 ![image](https://github.com/user-attachments/assets/cb4a2082-0350-413b-a9fa-5cb4587cf07c)
+
+Promote the server to a Domain Controller by selecting "Promote this server to a domain controller."
+
+![image](https://github.com/user-attachments/assets/e873a841-e9dc-435f-b775-8faa1d502c97)
+
+Add a new forest and specify the domain name (e.g., mydomain.com).
+
+![image](https://github.com/user-attachments/assets/4fffae21-eb50-4801-b13f-81d94f9b08d4)
+
+Provide the Domain Admin credentials during the promotion process.
+
+![image](https://github.com/user-attachments/assets/6b95c2e1-c5ad-458e-bc12-dc0f256dd50f)
+
+Install the Domain Controller (DC) role and complete the configuration. After the server restarts, the Domain Admin credentials are set up successfully.
+</p>
+<p>
+
+
+</p>
+<br />
+
+<p>
+<h4>Windows 10 VM Joined to the Domain</h4>
+
+
+![image](https://github.com/user-attachments/assets/9c63196b-6db1-4628-997b-11a5bd618f74)
+
+Change the DNS settings on the Windows 10 (client) VM to point to the domain controller using the server's VNet private IP, then restart the VM.
+
+
+
+
+![image](https://github.com/user-attachments/assets/41268788-e34a-4630-9d5f-34dff5768552)
+
+
+
+![image](https://github.com/user-attachments/assets/cb4a2082-0350-413b-a9fa-5cb4587cf07c)
+
+
+
 ![image](https://github.com/user-attachments/assets/e873a841-e9dc-435f-b775-8faa1d502c97)
 
 
