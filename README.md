@@ -236,7 +236,10 @@ Navigate to Client-1 using the newly created domain user credentials. Once logge
 
 ![image](https://github.com/user-attachments/assets/6fbac9ba-07b6-41bb-a162-d3f093faea90)
 
-dc lockout  
+Open the Group Policy Management Console by pressing Start > Run, and typing gpmc.msc.
+Next, edit the existing Default Domain Policy by navigating to Computer Configuration > Policies > Windows Settings > Security Settings > Account Policies > Account Lockout Policy.
+
+Configure the policy according to your security requirements. 
 
 ![image](https://github.com/user-attachments/assets/fee21f53-6e96-4372-a06a-724cfb03d8b3)
 
