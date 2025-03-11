@@ -100,7 +100,7 @@ Add a new forest and specify the domain name (e.g., mydomain.com).
 
 </p>
 <p>
-Provide the Domain Admin credentials during the promotion process.
+Provide the Domain credentials (labuser) during the promotion process.
 </p>
 <p>
   
@@ -108,7 +108,7 @@ Provide the Domain Admin credentials during the promotion process.
 
 </p>
 <p>
-Install the Domain Controller (DC) role and complete the configuration. After the server restarts, the Domain Admin credentials are set up successfully.
+Install the Domain Controller (DC) role and complete the configuration. After the server restarts, the Domain credentials are set up successfully.
 </p>
 <p>
 
@@ -123,7 +123,7 @@ Install the Domain Controller (DC) role and complete the configuration. After th
 
 </p>
 <p>
-The necessary Domain Admin credentials are entered, and after restarting the VM, users can log in using domain credentials (mydomain.com\labuser).
+The necessary Domain credentials are entered, and after restarting the VM, users can log in using domain credentials (mydomain.com\labuser).
 </p>
 <p>
 
