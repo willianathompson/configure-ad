@@ -259,7 +259,7 @@ Configure the policy according to your security requirements.
 </p>
 <p>
 
-Navigate to the Password Policy to further define the password settings according to your needs.
+Navigate to Password Policy to further define the password settings according to your needs.
 </p>
 <p>
 
