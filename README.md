@@ -139,7 +139,7 @@ Open Active Directory Users and Computers on DC-1, create an Organizational Unit
 
 </p>
 <p>
-Right-click on the _ADMINS OU and create a new user to set up a Domain Admin user. 
+Right-click on the _ADMINS OU and create a new user to set up a Domain Admin user (jane_admin). 
 </p>
 <p>
 
