@@ -243,7 +243,7 @@ Configure the policy according to your security requirements.
 
 ![image](https://github.com/user-attachments/assets/fee21f53-6e96-4372-a06a-724cfb03d8b3)
 
-password reset
+Navigate to the Password Policy to further define the password settings according to your needs.
 
 
 ![image](https://github.com/user-attachments/assets/cf2bf5b1-a37e-43c3-8eeb-97ec01965357)
