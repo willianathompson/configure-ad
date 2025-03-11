@@ -191,7 +191,7 @@ Use the domain admin credentials to log in to the domain on Client-1.
 
 </p>
 <p>
-The client VM is now connected to the domain. A restart is required. Upon logging back in, the client VM will be a member of the domain.
+The Client-1 VM is now connected to the domain. A restart is required. Upon logging back in, the Client-1 VM will be a member of the domain.
 </p>
 <p>
 
