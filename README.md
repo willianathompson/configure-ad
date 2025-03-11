@@ -224,7 +224,7 @@ Log into Client-1 as the domain admin (mydomain.com\jane_admin). Then, go to Sta
 
 </p>
 <p>
-Go to Start > PowerShell ISE (run as Administrator). Split the screen to show the script. Download the provided script and save it to the desktop. Open the script in PowerShell ISE, then paste the script into the editor. Finally, click Run Script to execute the script and create Domain Users.
+Go to Start > PowerShell ISE (run as Administrator). Split the screen to show a new document. Download the provided script and save it to the desktop. Open the script in PowerShell ISE, then paste the script into the blank document. Finally, click Run Script to execute the script and create Domain Users.
 </p>
 <p>
 
