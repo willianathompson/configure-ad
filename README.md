@@ -84,7 +84,8 @@ Install the AD DS role on the server.
 
 </p>
 <p>
-Promote the server to a Domain Controller by selecting "Promote this server to a domain controller."
+  
+Promote the server to a Domain Controller by selecting **"Promote this server to a domain controller"**.
 </p>
 <p>
 
@@ -92,7 +93,8 @@ Promote the server to a Domain Controller by selecting "Promote this server to a
 
 </p>
 <p>
-Add a new forest and specify the domain name (e.g., mydomain.com).
+  
+Add a new forest and specify the domain name `mydomain.com`.
 </p>
 <p>
 
@@ -100,7 +102,8 @@ Add a new forest and specify the domain name (e.g., mydomain.com).
 
 </p>
 <p>
-Provide the Domain credentials (labuser) during the promotion process.
+  
+Provide the Domain credentials `labuser` during the promotion process.
 </p>
 <p>
   
@@ -123,7 +126,8 @@ Install the Domain Controller (DC) role and complete the configuration. After th
 
 </p>
 <p>
-The necessary Domain credentials are entered, and after restarting the VM, users can log in using domain credentials (mydomain.com\labuser).
+  
+The necessary Domain credentials are entered, and after restarting the VM, labuser can log in using domain credentials `mydomain.com\labuser`.
 </p>
 <p>
 
@@ -131,7 +135,8 @@ The necessary Domain credentials are entered, and after restarting the VM, users
 
 </p>
 <p>
-Open Active Directory Users and Computers on DC-1, create an Organizational Unit (OU) called _EMPLOYEES, and a second OU named _ADMINS under your domain.
+  
+Open Active Directory Users and Computers on DC-1, create an Organizational Unit (OU) called **_EMPLOYEES**, and a second OU named **_ADMINS** under your domain.
 </p>
 <p>
 
@@ -139,7 +144,8 @@ Open Active Directory Users and Computers on DC-1, create an Organizational Unit
 
 </p>
 <p>
-Right-click on the _ADMINS OU and create a new user to set up a Domain Admin user (jane_admin). 
+  
+Right-click on the _ADMINS OU and create a new user to set up a Domain Admin user `jane_admin`. 
 </p>
 <p>
 
@@ -175,7 +181,8 @@ In Azure change the DNS settings on the Windows 10 (Client-1) VM to point to the
 
 </p>
 <p>
-Sign into the Client-1 domain with domain credentials (labuser). Then, connect Client-1 to the domain by going to Start > Settings > System > About. Under PC name, click Rename this PC (Advanced) > Change. Enter 'mydomain.com' in the domain field and confirm. 
+  
+Sign into the Client-1 domain with domain credentials (labuser). Then, connect Client-1 to the domain by going to **Start > Settings > System > About**. Under **PC name**, click **Rename this PC (Advanced) > Change**. Enter `mydomain.com` in the domain field and confirm. 
 </p>
 <p>
 
@@ -183,7 +190,8 @@ Sign into the Client-1 domain with domain credentials (labuser). Then, connect C
 
 </p>
 <p>
-Use the domain admin credentials to log in to the domain on Client-1.
+  
+Use the domain admin credentials `jane_admin` to log in to the domain on Client-1.
 </p>
 <p>
 
@@ -199,7 +207,8 @@ The Client-1 VM is now connected to the domain. A restart is required. Upon logg
 
 </p>
 <p>
-Return to DC-1 VM and log in as mydomain.com\domain admin (jane_admin). Verify that the Client-1 is connected to the domain by checking Active Directory Users and Computers in the Computers OU.
+  
+Return to DC-1 VM and log in as **mydomain.com\jane_admin**. Verify that the Client-1 is connected to the domain by checking Active Directory Users and Computers in the Computers OU.
 </p>
 <p>
 
@@ -216,7 +225,7 @@ Return to DC-1 VM and log in as mydomain.com\domain admin (jane_admin). Verify t
 </p>
 <p>
 
-Log into Client-1 as the domain admin (mydomain.com\jane_admin). Then, go to Start > Settings > System > Remote Desktop. Under User Accounts, click Select users that can remotely connect to this PC. Next, click Add and enter Domain users. This will grant all domain users access to log into Client-1 remotely.
+Log into Client-1 as the domain admin **mydomain.com\jane_admin**. Then, go to **Start > Settings > System > Remote Desktop**. Under **User Accounts**, click Select **users that can remotely connect to this PC**. Next, click Add and enter `Domain users`. This will grant all domain users access to log into Client-1 remotely.
 </p>
 <p>
 
@@ -224,7 +233,8 @@ Log into Client-1 as the domain admin (mydomain.com\jane_admin). Then, go to Sta
 
 </p>
 <p>
-Go to Start > PowerShell ISE (run as Administrator). Split the screen to show a new document. Download the provided script and save it to the desktop. Open the script in PowerShell ISE, then paste the script into the blank document. Finally, click Run Script to execute the script and create Domain Users.
+  
+Go to **Start > PowerShell ISE (run as Administrator)**. Split the screen to show a new document. Download the provided [script](https://github.com/willianathompson/new-users-script) and save it to the desktop. Open the script in PowerShell ISE, then paste the script into the blank document. Finally, click Run Script to execute the script and create Domain Users.
 </p>
 <p>
 
@@ -232,7 +242,8 @@ Go to Start > PowerShell ISE (run as Administrator). Split the screen to show a 
 
 </p>
 <p>
-Verify the domain users by opening Active Directory Users and Computers. Navigate to the _EMPLOYEES Organizational Unit (OU) and select a random user. Use that user's credentials to log into Client-1.
+  
+Verify the domain users by opening Active Directory Users and Computers. Navigate to the _EMPLOYEES Organizational Unit (OU) and select a random user(**rab.feb**). Use that user's credentials to log into Client-1.
 </p>
 <p>
 
@@ -240,7 +251,8 @@ Verify the domain users by opening Active Directory Users and Computers. Navigat
 
 </p>
 <p>
-Navigate to Client-1 using the newly created domain user credentials. Once logged in, open This PC > Windows (C:) > Users to view the Domain User profile on Client-1.
+  
+Navigate to Client-1 using the newly created domain user credentials (**mydomain.com\rab.feb**). Once logged in, open **This PC > Windows (C:) > Users** to view the Domain User profile on Client-1.
 </p>
 <p>
 
@@ -248,8 +260,9 @@ Navigate to Client-1 using the newly created domain user credentials. Once logge
 
 </p>
 <p>
-Open the Group Policy Management Console by pressing Start > Run, and typing gpmc.msc.
-Next, edit the existing Default Domain Policy by navigating to Computer Configuration > Policies > Windows Settings > Security Settings > Account Policies > Account Lockout Policy.
+  
+Open the Group Policy Management Console by pressing **Start > Run**, and typing `gpmc.msc`.
+Next, edit the existing Default Domain Policy by navigating to **Computer Configuration > Policies > Windows Settings > Security Settings > Account Policies > Account Lockout Policy**.
 
 Configure the policy according to your security requirements. 
 </p>
@@ -259,7 +272,7 @@ Configure the policy according to your security requirements.
 </p>
 <p>
 
-Navigate to Password Policy to further define the password settings according to your needs.
+Navigate to **Password Policy** to further define the password settings according to your needs.
 </p>
 <p>
 
