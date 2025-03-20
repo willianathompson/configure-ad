@@ -280,7 +280,8 @@ Navigate to **Password Policy** to further define the password settings accordin
 
 </p>
 <p>
-To initiate an automatic update of the Group Policy changes, simply open the Command Prompt and enter the command: gpupdate /force.
+  
+The GPM lockout and password policies will update automatically after some time, but to initiate an immediate update of the Group Policy changes, simply open the  **Command Prompt** and enter `gpupdate /force`.
 
 </p>
 <p>
