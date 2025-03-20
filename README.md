@@ -282,6 +282,8 @@ Navigate to **Password Policy** to further define the password settings accordin
 <p>
   
 The GPM lockout and password policies will update automatically after some time, but to initiate an immediate update of the Group Policy changes, simply open the  **Command Prompt** and enter `gpupdate /force`.
-
+<p>
+</p>
+With the on-premises Active Directory deployed in Azure Virtual Machines and domain membership verified, the system is now set up for secure user authentication, domain management, and group policy application. This setup provides a reliable solution for managing users and resources in the cloud while maintaining the benefits of an on-premises Active Directory.
 </p>
 <p>
